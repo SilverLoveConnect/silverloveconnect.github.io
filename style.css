@@ -20,7 +20,6 @@ header.site { padding: 28px 0 12px; }
 header.site .brand { color: var(--accent); font-weight: 700; font-size: 15px; letter-spacing: 0.06em; }
 h1 { font-size: 28px; line-height: 1.35; margin: 8px 0 4px; }
 .meta { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
-.meta .todo { background: #FFF3CD; color: #8a6d1a; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
 nav.toc { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 28px; font-size: 15px; }
 nav.toc a { color: var(--accent); text-decoration: none; }
 nav.toc a:hover { text-decoration: underline; }
@@ -43,3 +42,24 @@ footer.site a { color: var(--accent); }
 }
 .home-links a:hover { border-color: var(--accent); }
 .home-links a span { display: block; margin-top: 4px; color: var(--muted); font-size: 14px; font-weight: 400; }
+
+/* 본문 소제목 — 처리방침의 조문 내 구분 */
+main h3 { font-size: 17px; margin: 22px 0 8px; color: #4A3F3A; }
+
+/* 강조 박스 */
+.notice {
+  background: #FFF3E0; border: 1px solid #F0D9B5; border-radius: 10px;
+  padding: 14px 16px; margin: 18px 0; font-size: 16px; color: #7A5C2E;
+}
+.notice strong { color: inherit; }
+
+/* 넓은 표는 박스 안에서 가로 스크롤 — 본문은 절대 가로로 밀리지 않게 */
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px 0 16px; }
+.scroll table { margin: 0; min-width: 520px; }
+
+main code {
+  background: #F1EAE3; padding: 2px 6px; border-radius: 4px;
+  font-size: 15px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+main a { color: var(--accent); }
+main ol > li { margin-bottom: 8px; }
